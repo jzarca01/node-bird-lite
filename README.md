@@ -2,7 +2,7 @@
 
 An API for Bird Scooters
 
-***For inquieries please contact me***
+***For inquiries please contact me***
 
 ## Usage
 
