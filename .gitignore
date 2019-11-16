@@ -1,6 +1,4 @@
 node_modules
 .vscode
 .DS_Store
-example/config.json
-example/stripe.js
-test.js
+src/

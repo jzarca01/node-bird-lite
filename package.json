@@ -1,21 +1,26 @@
 {
-  "name": "node-bird",
-  "version": "1.2.1",
-  "description": "Api Wrapper for Bird scooters",
-  "main": "index.js",
+  "name": "node-bird-lite",
+  "version": "2.2.1",
+  "description": "Lite version of node-bird",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js",
+    "prepare": "npm run build"
   },
   "author": "Jérémie Zarca <jeremie.zarca@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "axios": "^0.19.0",
     "faker": "^4.1.0",
-    "moment": "^2.22.2",
-    "prompt-async": "^0.9.9",
-    "qs": "^6.5.2",
-    "stripe": "^6.11.0"
+    "nanoid": "^2.1.7"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "rollup": "^1.27.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
