@@ -1,4 +1,4 @@
-const Bird = require('../dist/'); // require('node-bird');
+const Bird = require('../dist/'); // require('node-bird-lite');
 const bird = new Bird();
 
 const MY_LOCATION = { latitude : '48.8760826', longitude : '2.3691194'};
