@@ -1,4 +1,4 @@
-import { terser } from "rollup-plugin-terser";
+import obfuscatorPlugin from 'rollup-plugin-javascript-obfuscator';
 
 export default {
   input: "src/index.js",
@@ -6,5 +6,12 @@ export default {
       format: "cjs",
       file: "dist/index.js"
   },
-  plugins: [terser()]
+  plugins: [
+    //terser(),
+    obfuscatorPlugin({
+      compact: true,
+      renameGlobals: true,
+      stringArrayEncoding: true
+    })
+  ]
 };
